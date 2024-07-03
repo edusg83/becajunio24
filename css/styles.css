@@ -49,6 +49,20 @@ section {
     background-color: #ccccff;
 }
 
+aside {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffcc;
+    border-radius: 5px;
+}
+
+article {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #cceeff;
+    border-radius: 5px;
+}
+
 .negrita {
     font-weight: bold;
 }
