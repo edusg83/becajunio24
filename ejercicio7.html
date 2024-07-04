@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejercicio de HTML5 y CSS">
+    <meta name="author" content="Alejandro Souto">
+    <title>Ejercicio 7 - Elementos de Texto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="centrar">
+        <h1>Elementos de texto</h1>
+    </header>
+    <nav class="navegacion">
+    </nav>
+    <main id="main" class="main">
+        <aside>
+            <h2>Enlaces</h2>
+            <ul>
+                <li><a href="#cita1" target="_blank">Frank A. Clark</a></li>
+                <li><a href="#cita2">Albert Einstein</a></li>
+                <li><a href="ejercicio7.html" download>Descargar este archivo</a></li>
+            </ul>
+        </aside>
+        <section>
+            <p>Todo el mundo trata de realizar algo grande, sin darse cuenta de que la vida se compone de cosas pequeñas. <br><cite>Autor Desconocido</cite></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum semper dui a aliquam.</p>
+            <blockquote id="cita1">
+                Todo el mundo trata de realizar algo grande, sin darse cuenta de que la vida se compone de cosas pequeñas. <br> <cite>Frank A. Clark</cite>
+            </blockquote>
+            <blockquote id="cita2">
+                La vida es como una bicicleta. Para mantener el equilibrio tienes que seguir adelante. <br> <cite>Albert Einstein</cite>
+            </blockquote>
+        </section>
+    </main>
+    <footer class="centrar">
+        <div class="footer-left">
+            <b>Alumno EOI<br>
+            C:/La calle, 3, 03206<br>
+            Alicante (Alicante)</b><br>
+            <a href="mailto:pepe@correo.es">Enviar correo a Pepe</a><br>
+            <a href="tel:+34666001122">Llamar a Pepe</a>
+        </div>
+        <div class="footer-right">
+            <b>Curso HTML5 EOI – 2024</b><br>
+            <span id="fecha-hora"></span>
+        </div>
+    </footer>
+
+    <script>
+        const fechaHora = new Date();
+        document.getElementById('fecha-hora').textContent = fechaHora.toLocaleString();
+    </script>
+</body>
+</html>
