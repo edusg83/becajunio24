@@ -16,7 +16,8 @@
 }
 
 .padding{
-    padding: auto;
+    padding: 3em;
+    background-color: beige;
 }
 
 .border{
