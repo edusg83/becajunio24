@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ejercicio 6</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script1.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Elementos de texto</h1>
+    </header>
+
+    <nav>
+        <a href="#main-content">Enlace a elemento principal</a>
+    </nav>
+
+    <main id="main-content">
+        <section>
+            <p id="cita1">“Todo el mundo trata de realizar algo grande, sin darse cuenta de que la vida se compone de
+                cosas pequeñas. <br> <strong>Frank A. Clark</strong>”</p>
+            <p id="cita2">“La vida es como una bicicleta. Para mantener el equilibrio tienes que seguir adelante. <br>
+                <strong>Albert Einstein</strong>”</p>
+        </section>
+    </main>
+
+    <aside>
+        <ul>
+            <li><a href="#cita1">Frank A. Clark</a></li>
+            <li><a href="#cita2">Albert Einstein</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <div>Alumno EOI<br>C:/La calle, 3 , 03206<br>Alicante (Alicante)</div>
+        <div id="datetime"></div>
+    </footer>
+
+    <script>
+        // Script para añadir fecha y hora actual en el pie de página
+        const fechaHora = new Date();
+        document.getElementById("datetime").textContent = fechaHora.toLocaleString();
+    </script>
+</body>
+
+</html>
