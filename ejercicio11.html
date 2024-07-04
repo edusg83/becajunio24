@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10 - Formulario y Citas</title>
+    <link rel="stylesheet" href="css/styles11.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="author" content="Alejandro Souto">
+</head>
+<body>
+    <header>
+        <h1>Elementos de texto</h1>
+    </header>
+    
+    <main class="container">
+        <section class="form-section">
+            <div class="form-box">
+                <form action="/submit-formulario" method="POST">
+                    <h2>Formulario</h2>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <div style="display: flex;">
+                        <select id="codigo_pais" name="codigo_pais" style="flex: 1;">
+                            <option value="+1">+1 - Estados Unidos</option>
+                            <option value="+44">+44 - Reino Unido</option>
+                            <option value="+34">+34 - España</option>
+                            <!-- Agrega más opciones según sea necesario -->
+                        </select>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" style="flex: 3;" required>
+                    </div>
+
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="18" max="100" required>
+
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        
+        <section class="table-section">
+            <div class="table-box">
+                <h2>Citas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Autor</th>
+                            <th>Cita</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="cita1">
+                            <td>Frank A. Clark</td>
+                            <td>Todo el mundo trata de realizar algo grande, sin darse cuenta de que la vida se compone de cosas pequeñas.</td>
+                        </tr>
+                        <tr id="cita2">
+                            <td>Albert Einstein</td>
+                            <td>La vida es como una bicicleta. Para mantener el equilibrio tienes que seguir adelante.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            Alumno EOI<br>
+            C:/La calle, 3, 03206<br>
+            Alicante (Alicante)<br>
+            <a href="mailto:pepe@correo.es">Enviar correo a Pepe</a><br>
+            <a href="tel:666001122">Llamar a Pepe</a>
+        </div>
+        <div class="footer-right">
+            Curso HTML5 EOI – 2024<br>
+            <span id="currentDate"></span>
+        </div>
+    </footer>
+</body>
+</html>
