@@ -6,7 +6,7 @@
     <meta name="description" content="Ejercicio de HTML5 y CSS">
     <meta name="author" content="Alejandro Souto">
     <title>Ejercicio 7 - Elementos de Texto</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles8.css">
 </head>
 <body>
     <header class="centrar">
@@ -18,8 +18,16 @@
         <aside>
             <h2>Enlaces</h2>
             <ul>
-                <li><a href="#cita1" target="_blank">Frank A. Clark</a></li>
-                <li><a href="#cita2">Albert Einstein</a></li>
+                <li>
+                    <a href="#cita1" target="_blank">Frank A. Clark</a>
+                    <img src="images/frankClark.png" alt="Imagen no encontrada">
+                    <figcaption><a href="#cita1">Frank A. Clark</a></figcaption>
+                </li>
+                <li>
+                    <a href="#cita2">Albert Einstein</a>
+                    <img src="images/albertEinstein.png" alt="Imagen no encontrada">
+                    <figcaption><a href="#cita2">Albert Einstein</a></figcaption>
+                </li>
                 <li><a href="index.html" download>Descargar este archivo</a></li>
             </ul>
         </aside>
@@ -68,6 +76,7 @@
                 console.error('Error fetching Lorem Ipsum:', error);
             }
         }
+
         fetchLoremIpsum();
     </script>
 </body>
