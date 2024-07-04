@@ -14,3 +14,20 @@
     color: black;
     background-color: gray;
 }
+
+.padding{
+    padding: auto;
+}
+
+.border{
+    border: 0cap;
+}
+
+.left{
+    float: left;
+}
+
+img{
+    width: 10%;
+    height: 10%;
+}
