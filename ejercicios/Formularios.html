@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Título de tu página</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>FORMULARIOS</h1>
+    <p>Este es un párrafo de ejemplo.</p>
+</div>
+
+<main class="body">
+    <div>
+        <form action="" method="get" class="container">
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" required minlength="4" maxlength="12">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="email", id="email" required minlength="10" maxlength="30">
+            </div>
+            <div>  
+                <input type="submit" value="Dar alta">
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <label for="Comentario">Comentarios</label>
+        <textarea name="comentarios" id="comentarios" rows="5" cols="20">
+            41 grados, ni frio ni calor, ponte una rebequita.
+        </textarea>
+    </div>
+
+    <div class="container">
+        <select name="Lista de cosas" id="lista">
+            <optgroup label="Masa">
+                <label>
+                    <option value="1">Harina</option>
+                    <option value="1">Aceite</option>
+                    <option value="1">Agua</option>
+                </label>
+            </optgroup>
+        </select>
+    </div>
+
+    <div class="container">  
+        <form oninput="resultado.value=rango.value;pro.value=rango,value;">
+            <input type="range" id="rango" value="0">
+            <progress id="progress" value="0", max="100">0%</progress>
+            <output id="resultado">Sin valor</output>
+        </form>
+    </div>
+
+    <div class="containter">
+        <fieldset class="container">
+            <legend>Test</legend>
+            <section>
+                <label for="autocomplete">Introduce algo:</label>
+                <input type="text" id="autocomplete" name="autocomplete" autocomplete="on">
+            </section>
+        </fieldset>
+    </div>
+</main>
+
+</body>
+</html>
