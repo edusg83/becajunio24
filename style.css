@@ -1,0 +1,52 @@
+html{
+padding-left: 15px;
+}
+
+#box1{
+    display: flex;
+    align-items: flex-end;
+
+}
+
+#cita1{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: 50px;
+    width: 700px;
+
+    
+}
+
+#cita2{
+    height: 50px;
+    width: 700px;
+    margin-bottom: 15px;
+
+}
+
+ul{
+    list-style:none;
+    margin-bottom: 40px;
+    margin-left: 80px;
+
+}
+
+li{
+    margin-top: 40px;
+}
+
+footer{
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
