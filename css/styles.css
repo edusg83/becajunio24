@@ -10,3 +10,34 @@
     color: red;
     background-color: aquamarine;
 }
+
+article{
+    border: 1px solid blue;
+    width: 30vw;
+    height: 10vh;
+}
+
+.padding{
+    padding: 3em;
+    background-color: beige;
+}
+
+.border{
+    border: 1px dotted red;
+}
+
+.margen{
+    margin: 2em;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.bottom{
+    clear: both;
+}
