@@ -1,0 +1,36 @@
+/* a) */
+#sec1-a {
+    display: flex;
+}
+
+.p1, .p2, .p3, .p4 {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+}
+
+/* b) */
+#sec1-b {
+    display: flex;
+    flex-direction: column;
+}
+
+.p1, .p2, .p3, .p4 {
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+}
+
+/* c) */
+#sec1-c {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.p1, .p2, .p3, .p4 {
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+}
