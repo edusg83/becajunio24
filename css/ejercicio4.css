@@ -1,0 +1,29 @@
+/*a*/
+main p:nth-child(2){
+    color: whitesmoke;
+}
+
+/*b*/
+main p:first-child{
+    color: red;
+    font-size: 48px;
+    text-align: center;
+}
+
+
+/*c*/
+main p:last-child{
+    color: gray;
+    font-size: 160px;
+    text-decoration: overline;
+}
+
+/*d*/
+main p:nth-child(even){
+    background-color: red;
+}
+main p:nth-child(odd){
+    background-color: yellow;
+}
+
+/*Ejercicio 5*/

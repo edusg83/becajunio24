@@ -1,7 +1,11 @@
-p{
+/*a*/
+section[name = seccion1]{
     color: red;
-    font-size: 2em;
 }
-section{
-    font-size: 5em;
+
+/*b*/
+section[name = seccion1], .articulo2{
+    color: red;
 }
+
+/*c*/
