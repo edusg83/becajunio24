@@ -8,6 +8,7 @@ main p:first-child{
     color: red;
     font-size: 48px;
     text-align: center;
+    margin: 1em;
 }
 
 
@@ -16,6 +17,7 @@ main p:last-child{
     color: gray;
     font-size: 160px;
     text-decoration: overline;
+    margin: 2em;
 }
 
 /*d*/
