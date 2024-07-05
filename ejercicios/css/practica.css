@@ -1,4 +1,4 @@
-p{
+p, span, article{
     color: red;
     font-size: 2em;
 }
@@ -6,3 +6,56 @@ p{
 section{
     font-size: 5em;
 }
+
+p > span
+{
+    color: yellow;
+}
+
+p span{
+    color: aqua;
+    font-size: 2px;
+}
+
+p+span{
+    font-size: 10px;
+}
+
+p ~ span{
+    font-size: 50px;
+    background-color: aliceblue;
+}
+
+[name="seccion1"] {
+    color: red;
+}
+
+[name="seccion1"],
+.articulo2 {
+    color: red;
+}
+
+p + section{
+    color: blue;
+}
+
+.articulo2{
+    color: brown;
+}
+
+section{
+    color: rebeccapurple;
+}
+
+.articulo{
+    color: red;
+}
+
+article[name*=“2”]{
+     color: violet
+}
+
+p[name^=“nom”]{ color:red}
+
+
+

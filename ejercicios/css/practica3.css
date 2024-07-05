@@ -1,0 +1,21 @@
+
+p:first-of-type{
+    color: aqua;
+}
+
+p:last-child{
+    color: green;
+}
+
+p:nth-child(even){
+    color: blue;
+}
+
+p:nth-child(odd){
+    color:yellow;
+}
+
+section:only-child{
+    color: gray;
+}
+
