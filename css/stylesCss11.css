@@ -1,0 +1,30 @@
+/* a)  */
+.p2 {
+    animation-name: changeColorPosition;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeColorPosition {
+    0% {
+        background-color: red;
+        transform: translate(0, 0);
+    }
+    25% {
+        background-color: yellow;
+        transform: translate(200px, 0);
+    }
+    50% {
+        background-color: blue;
+        transform: translate(200px, 200px);
+    }
+    75% {
+        background-color: green;
+        transform: translate(0, 200px);
+    }
+    100% {
+        background-color: red;
+        transform: translate(0, 0);
+    }
+}
