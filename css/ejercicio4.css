@@ -17,7 +17,7 @@ main p:last-child{
     color: gray;
     font-size: 160px;
     text-decoration: overline;
-    margin: 2em;
+    margin-top: 2em;
 }
 
 /*d*/
@@ -28,4 +28,8 @@ main p:nth-child(odd){
     background-color: yellow;
 }
 
-/*Ejercicio 5*/
+/*Ejercicio 7*/
+section{
+    background-image: url('/images/logoeoiok.jpg');
+    background-repeat: repeat-x;
+}
