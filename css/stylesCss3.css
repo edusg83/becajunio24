@@ -1,0 +1,44 @@
+/* c) */
+section[name="seccion1"] {
+    color: red;
+}
+
+/* d) */
+section[name="seccion1"], .articulo2 {
+    color: red;
+}
+
+/* e) */
+p + section {
+    color: red;
+}
+
+/* f) */
+article[class*="articulo2"] {
+    color: red;
+}
+
+/* g) */
+main section {
+    color: red;
+}
+
+/* h) */
+[class*="articulo"] {
+    color: red;
+}
+
+/* i) */
+[class$="2"] {
+    color: red;
+}
+
+/* j) */
+[class^="art"] {
+    color: red;
+}
+
+/* k) */
+#sec1 {
+    color: red;
+}
