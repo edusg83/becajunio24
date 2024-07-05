@@ -1,0 +1,21 @@
+/* CLASE */
+.parrafos{
+    color:#AE31FF;
+
+}
+
+/* ELEMENTO */
+p{
+    color:#2bbb3f;
+}
+
+/* IDENTIFICADOR */
+#parrafos {
+    color:yellow;
+}
+
+/* NAME */
+p[name=ejemploName]
+{
+ color:red;
+}
