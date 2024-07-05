@@ -43,12 +43,14 @@ p:not(:first-of-type) {
 
 /* a) */
 .p1 {
+    color: black;
     font-size: 3em;
     text-align: center;
 }
 
 /* b) */
 .p3 {
+    color: black;
     font-size: 10em;
     text-decoration: overline;
 }
