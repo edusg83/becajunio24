@@ -1,0 +1,54 @@
+/* Ejercicio 4 */
+
+/* a) */
+p:nth-of-type(2) {
+    color: red;
+}
+
+/* b) */
+p:first-of-type {
+    color: red;
+}
+
+/* c) */
+p:last-of-type {
+    color: red;
+}
+
+/* d) */
+p:nth-of-type(even) {
+    background-color: red;
+}
+
+p:nth-of-type(odd) {
+    background-color: yellow;
+}
+
+/* e) */
+main > section:only-child {
+    color: red;
+}
+
+/* f) */
+p:first-of-type {
+    color: red;
+}
+
+/* g) */
+p:not(:first-of-type) {
+    background-color: red;
+}
+
+/* Ejercicio 5 */
+
+/* a) */
+.p1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+/* b) */
+.p3 {
+    font-size: 10em;
+    text-decoration: overline;
+}

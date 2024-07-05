@@ -1,0 +1,38 @@
+/* a) */
+p:nth-of-type(2) {
+    color: red;
+}
+
+/* b) */
+p:first-of-type {
+    color: red;
+}
+
+/* c) */
+p:last-of-type {
+    color: red;
+}
+
+/* d) */
+p:nth-of-type(even) {
+    background-color: red;
+}
+
+p:nth-of-type(odd) {
+    background-color: yellow;
+}
+
+/* e) */
+main > section:only-child {
+    color: red;
+}
+
+/* f) */
+p:first-of-type {
+    color: red;
+}
+
+/* g) */
+p:not(:first-of-type) {
+    background-color: red;
+}
