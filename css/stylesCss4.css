@@ -33,6 +33,6 @@ section p:first-of-type {
 }
 
 /* g) */
-section p:not(p) {
+p:not(section) {
     background-color: red;
 }
