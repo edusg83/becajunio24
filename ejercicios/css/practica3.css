@@ -32,6 +32,12 @@ section:only-child{
 }
 
 section{
-    background-image: url("\images\descarga.png");
+    background-image: url("../images/descarga.png");
     background-repeat: repeat-x;
+}
+
+.p2{
+    border-radius: 2em;
+    outline-width: 10em;
+    outline-color: blue;
 }
