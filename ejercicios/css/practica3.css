@@ -30,3 +30,8 @@ section:only-child{
     text-decoration: overline;
     margin-top: 2em;
 }
+
+section{
+    background-image: url("\images\descarga.png");
+    background-repeat: repeat-x;
+}
