@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10 - Formulario y Citas</title>
+    <link rel="stylesheet" href="css/styles11.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="author" content="Alejandro Souto">
+</head>
+<body>
+    <header>
+        <h1>Formularios Citas y música</h1>
+    </header>
+    
+    <main class="container">
+        <section class="form-section">
+            <form action="/submit-formulario" method="POST" class="form-box">
+                <h2>Formulario</h2>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="50" required autocomplete="name" autofocus>
+                    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                    
+                    <label for="telefono">Teléfono:</label>
+                    <select id="codigo_pais" name="codigo_pais">
+                        <option value="+1">+1 - Estados Unidos</option>
+                        <option value="+44">+44 - Reino Unido</option>
+                        <option value="+34">+34 - España</option>
+                    </select>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required autocomplete="tel">
+                    
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="18" max="100" required>
+                    
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Otros Datos</legend>
+                    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    
+                    <label for="archivo">Subir archivo:</label>
+                    <input type="file" id="archivo" name="archivo" accept=".pdf,.doc,.docx" multiple>
+                    
+                    <label><input type="checkbox" name="suscripcion" value="1"> Suscribirse al boletín</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Preferencias</legend>
+                    
+                    <label for="color_favorito">Color favorito:</label>
+                    <input type="color" id="color_favorito" name="color_favorito">
+                    
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+                    
+                    <label for="hora_preferida">Hora preferida:</label>
+                    <input type="time" id="hora_preferida" name="hora_preferida">
+                    
+                    <label for="nivel_estudio">Nivel de Estudio:</label>
+                    <select id="nivel_estudio" name="nivel_estudio">
+                        <option value="primaria">Primaria</option>
+                        <option value="secundaria">Secundaria</option>
+                        <option value="universidad">Universidad</option>
+                    </select>
+                    
+                    <label for="intereses">Intereses:</label>
+                    <select id="intereses" name="intereses" multiple>
+                        <option value="deportes">Deportes</option>
+                        <option value="lectura">Lectura</option>
+                        <option value="viajes">Viajes</option>
+                        <option value="musica">Música</option>
+                    </select>
+                </fieldset>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+        <section class="table-section">
+            <table class="table-box">
+                <caption>Citas</caption>
+                <thead>
+                    <tr>
+                        <th>Autor</th>
+                        <th>Cita</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="cita1">
+                        <td>Frank A. Clark</td>
+                        <td>Todo el mundo trata de realizar algo grande, sin darse cuenta de que la vida se compone de cosas pequeñas.</td>
+                    </tr>
+                    <tr id="cita2">
+                        <td>Albert Einstein</td>
+                        <td>La vida es como una bicicleta. Para mantener el equilibrio tienes que seguir adelante.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="music-player">
+            <h2>Reproductor de Música</h2>
+            <audio id="music-player" controls autoplay>
+                <source src="musica/CeltianNiam.mp3" type="audio/mp3">
+                <source src="musica/DeblerMeperdereentuCuerpo.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <div class="music-controls">
+                <button onclick="playPause()">Play/Pause</button>
+                <button onclick="previousTrack()">Anterior</button>
+                <button onclick="nextTrack()">Siguiente</button>
+            </div>
+            <div id="current-song">Canción actual: CeltianNiam.mp3</div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            Alumno EOI<br>
+            C:/La calle, 3, 03206<br>
+            Alicante (Alicante)<br>
+            <a href="mailto:pepe@correo.es">Enviar correo a Pepe</a><br>
+            <a href="tel:666001122">Llamar a Pepe</a>
+        </div>
+        <div class="footer-right">
+            Curso HTML5 EOI – 2024<br>
+            <span id="currentDate"></span>
+        </div>
+    </footer>
+
+    <script src="js/music-player.js"></script>
+</body>
+</html>
