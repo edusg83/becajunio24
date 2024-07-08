@@ -1,0 +1,14 @@
+/* a) */
+section {
+    background-image: url('../images/logoEOI.jpg');
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+/* Ejercicio 8 */
+
+.p2 {
+    border: 2px solid blue;
+    border-radius: 2em;
+    width: 10em;
+}

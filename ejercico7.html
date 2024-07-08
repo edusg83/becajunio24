@@ -53,19 +53,36 @@
         </article>
 
         <aside>
-            <h2>Enlaces</h2>          
-            <img srcset="https://upload.wikimedia.org/wikipedia/commons/5/57/Frank_Clark.jpg">
-            <a href="http://proverbia.net/cita/289-todo-el-mundo-trata-de-realizar-algo-grande-sin-d" id="" target="_blank">Frank A. Clark</a><br>
-            <img srcset="https://www.freeiconspng.com/thumbs/einstein-png/albert-einstein-png-8.png">
-            <a href="http://proverbia.net/cita/453060906-la-vida-es-como-montar-en-bicicleta-para-mantener" id="cita2">Albert Einstein</a><br>
+            <h2>Enlaces</h2>
+            <ul>          
+                <li>
+                    <img srcset="https://upload.wikimedia.org/wikipedia/commons/5/57/Frank_Clark.jpg">
+                    <a href="http://proverbia.net/cita/289-todo-el-mundo-trata-de-realizar-algo-grande-sin-d" id="" target="_blank" alt="imagen no encotrada">Frank A. Clark</a><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img srcset="https://www.freeiconspng.com/thumbs/einstein-png/albert-einstein-png-8.png">
+                    <a href="http://proverbia.net/cita/453060906-la-vida-es-como-montar-en-bicicleta-para-mantener" id="cita2" alt="imagen no encotrada">Albert Einstein</a><br>
+                </li>
+            </ul>
             <a href="ejercicio7.html" download>Descargar ejercicio7.html</a>
+            <a href="mailto:pepe@correo.es">Enviar correo a Pepe</a><br>
+            <a href="tel:666001122">Llamar a Pepe</a>
+            
         </aside>
 
         
 
     </main>
 
-    <footer>Alumno EOI C:/La calle, 3 , 03206 Alicante (Alicante)<span>20:25</span></footer>
+    <footer>Alumno EOI C:/La calle, 3 , 03206 Alicante (Alicante)<span id="fecha-hora"></span></footer>
+
+        <script>
+        const fechaHora = new Date();
+            document.getElementById('fecha-hora').textContent = fechaHora.toLocaleString();
+        </script>
+    
         
    
 

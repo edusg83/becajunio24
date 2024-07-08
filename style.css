@@ -26,14 +26,16 @@ padding-left: 15px;
 }
 
 ul{
-    list-style:none;
+   
     margin-bottom: 40px;
     margin-left: 80px;
 
 }
 
 li{
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    list-style:none;
 }
 
 footer{
@@ -54,9 +56,4 @@ footer{
 img{
     width: 100px;
     height: 100px;
-}
-
-aside{
-    display: flex;
-    flex-direction: column;
 }

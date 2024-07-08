@@ -1,0 +1,29 @@
+/* Ejercicio 7 */
+
+/* a) */
+section {
+    background-image: url('../images/logoEOI.jpg');
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+/* Ejercicio 8 */
+
+/* a) */
+.p2 {
+    border: 2px solid blue;
+    border-radius: 2em;
+    width: 10em;
+}
+
+/* Ejercicio 9 */
+
+/* a) */
+.p2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* b) */
+.p4 {
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+}

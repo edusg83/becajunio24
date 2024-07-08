@@ -1,0 +1,13 @@
+/* a) */
+#sec1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.p1, .p3 {
+    align-self: flex-start;
+}
+
+.p2, .p4 {
+    align-self: flex-end;
+}

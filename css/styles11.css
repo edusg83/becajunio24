@@ -1,0 +1,156 @@
+/* Estilos base */
+body {
+    background-color: #fdf5d5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.form-section, .table-section {
+    flex: 1;
+}
+
+.form-box, .table-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-box h2, .table-box caption {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input, form select, form textarea {
+    width: calc(100% - 20px); /* Para tener en cuenta el padding de 10px */
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    background-color: #e7f3e7;
+    color: #333;
+}
+
+tbody td:first-child {
+    background-color: #d9ead3;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-left, .footer-right {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+/* Estilos para el reproductor de música */
+.music-player {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.music-player h2 {
+    margin-bottom: 10px;
+}
+
+.music-player audio {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.music-player audio::-webkit-media-controls-panel {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.music-player audio::-webkit-media-controls-play-button {
+    display: none; /* Ocultar el botón de reproducción predeterminado */
+}
+
+.music-player audio::-webkit-media-controls-enclosure {
+    display: flex;
+    align-items: center;
+}
+
+.music-player audio::-webkit-media-controls-volume-slider {
+    width: 60px;
+}
