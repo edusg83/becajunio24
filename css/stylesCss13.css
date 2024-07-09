@@ -1,36 +1,85 @@
-/* a) */
+#sec1-a, #sec1-b, #sec1-c {
+    border: 2px solid #000;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+}
+
+.p1, .p2, .p3, .p4 {
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 2px solid;
+    width: 10em;
+    height: 3em;
+    animation: borderColorChange 5s infinite, sizeChange 5s infinite, textColorChange 5s infinite;
+}
+
+.p1 {
+    border-color: red;
+    animation: borderColorChangeWarm 5s infinite, sizeChange 5s infinite, textColorChangeWarm 5s infinite;
+}
+
+.p2 {
+    border-color: blue;
+    animation: borderColorChangeCool 5s infinite, sizeChange 5s infinite, textColorChangeCool 5s infinite;
+}
+
+.p3 {
+    border-color: red;
+    animation: borderColorChangeWarm 5s infinite, sizeChange 5s infinite, textColorChangeWarm 5s infinite;
+}
+
+.p4 {
+    border-color: blue;
+    animation: borderColorChangeCool 5s infinite, sizeChange 5s infinite, textColorChangeCool 5s infinite;
+}
+
+@keyframes borderColorChangeWarm {
+    0%, 100% { border-color: red; }
+    25% { border-color: orange; }
+    50% { border-color: yellow; }
+    75% { border-color: red; }
+}
+
+@keyframes borderColorChangeCool {
+    0%, 100% { border-color: blue; }
+    25% { border-color: cyan; }
+    50% { border-color: green; }
+    75% { border-color: blue; }
+}
+
+@keyframes sizeChange {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+@keyframes textColorChangeWarm {
+    0%, 100% { color: red; }
+    25% { color: orange; }
+    50% { color: yellow; }
+    75% { color: red; }
+}
+
+@keyframes textColorChangeCool {
+    0%, 100% { color: blue; }
+    25% { color: cyan; }
+    50% { color: green; }
+    75% { color: blue; }
+}
+
 #sec1-a {
     display: flex;
 }
 
-.p1, .p2, .p3, .p4 {
-    flex: 1;
-    padding: 10px;
-    margin: 10px;
-    background-color: #f0f0f0;
-}
-
-/* b) */
 #sec1-b {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
-.p1, .p2, .p3, .p4 {
-    padding: 10px;
-    margin: 10px;
-    background-color: #f0f0f0;
-}
-
-/* c) */
 #sec1-c {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-.p1, .p2, .p3, .p4 {
-    padding: 10px;
-    margin: 10px;
-    background-color: #f0f0f0;
 }
