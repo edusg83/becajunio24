@@ -55,17 +55,17 @@
 }
 
 @keyframes textColorChangeWarm {
-    0%, 100% { color: red; }
-    25% { color: orange; }
-    50% { color: yellow; }
+    0%, 100% { color: rgb(255, 0, 128); }
+    25% { color: rgb(255, 0, 234); }
+    50% { color: rgb(255, 115, 0); }
     75% { color: red; }
 }
 
 @keyframes textColorChangeCool {
-    0%, 100% { color: blue; }
-    25% { color: cyan; }
-    50% { color: green; }
-    75% { color: blue; }
+    0%, 100% { color: rgb(0, 247, 255); }
+    25% { color: rgb(0, 255, 115); }
+    50% { color: rgb(150, 230, 3); }
+    75% { color: rgb(0, 255, 115); }
 }
 
 #sec1-a {
