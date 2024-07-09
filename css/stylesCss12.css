@@ -10,16 +10,34 @@
 
 .p1, .p3 {
     align-self: flex-start;
-    border: 2px solid #ff0000;
+    border: 2px solid;
     padding: 10px;
     margin: 10px;
     background-color: #ffe5e5;
+    animation: warmColors 5s infinite;
 }
 
 .p2, .p4 {
     align-self: flex-end;
-    border: 2px solid #0000ff;
+    border: 2px solid;
     padding: 10px;
     margin: 10px;
     background-color: #e5e5ff;
+    animation: coolColors 5s infinite;
+}
+
+@keyframes warmColors {
+    0% { border-color: #ff0000; }
+    25% { border-color: #ff7f00; }
+    50% { border-color: #ffbf00; }
+    75% { border-color: #ff4f00; }
+    100% { border-color: #ff0000; }
+}
+
+@keyframes coolColors {
+    0% { border-color: #0000ff; }
+    25% { border-color: #007fff; }
+    50% { border-color: #00bfff; }
+    75% { border-color: #004fff; }
+    100% { border-color: #0000ff; }
 }
