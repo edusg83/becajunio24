@@ -29,6 +29,21 @@ section:only-child{
     font-size: 10em;
     text-decoration: overline;
     margin-top: 2em;
+
+    animation: mianimacion 1s ease-in-out 0s infinite normal none;
+
+}
+
+@keyframes mianimacion{
+    0% {
+    background: #FFFFFF;
+    }
+    50% {
+    background: #FF0000;
+    }
+    100% {
+    background: #FFFFFF;
+   }
 }
 
 section{
@@ -45,6 +60,31 @@ section{
     text-shadow: 2px 2px 5px rgba(1, 22, 3, 0.8);
     
     transform: rotate(180deg);
+    animation: testAnimacion 2s ease-in-out 0s infinite normal none;
+
+}
+
+@keyframes testAnimacion{
+    0% {
+    background: #c50606;
+    transform: translate(0,0);
+    }
+    25% {
+    background: #a5e216;
+    transform: translate(200px,0);
+    }
+    50% {
+    background: #127bd1;
+    transform: translate(200px,200px);
+    }
+    75% {
+    background: #058b27;
+    transform: translate(0,200px);
+    }
+    100% {
+    background: #d30808;
+    transform: translate(0,0);
+   }
 }
 
 .p4{
