@@ -9,10 +9,12 @@ p:last-child{
 
 p:nth-child(even){
     color: blue;
+    /*float: right;*/
 }
 
 p:nth-child(odd){
     color:yellow;
+    /*float: left;*/
 }
 
 section:only-child{
@@ -90,4 +92,22 @@ section{
 .p4{
     background-image: linear-gradient(45deg, #ff7f50, #1e90ff);
     transform: rotate3d(1,1,0, 45deg);
+}
+
+/*A
+p{
+    display: flex;
+    justify-content: flex-start;
+}*/
+
+/*B
+p{
+    display: flex;
+    justify-content: center;
+}*/
+
+/*C*/
+p{
+    display: flex;
+    justify-content: flex-end;
 }
