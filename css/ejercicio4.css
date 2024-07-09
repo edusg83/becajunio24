@@ -35,25 +35,34 @@ p:nth-child(4){
     transform: perspective(500px) rotate3d(0, 1, 0, 45deg);
 }
 
+/*Ejercicio 11*/
 @keyframes animacion {
     0%{
         color: red;
-        transform: translate(0,0);
+        transform: translate(0px,0px);
     }
     25%{
         color: yellow;
-        transform: translate(200,0);
+        transform: translate(200px,0px);
     }
     50%{
         color: blue;
-        transform: translate(200,200);
+        transform: translate(200px,200px);
     }
     75%{
         color: green;
-        transform: translate(0,200);
+        transform: translate(0px,200px);
     }
     100%{
         color: red;
-        transform: translate(0,0);
+        transform: translate(0px,0px);
     }
+}
+
+/*Ejercicio 12*/
+main p:nth-child(odd){
+    float: left;
+}
+main p:nth-child(even){
+    float: right;
 }
