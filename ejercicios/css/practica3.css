@@ -37,7 +37,14 @@ section{
 }
 
 .p2{
+    border: 2px;
+    border-style: solid;
     border-radius: 2em;
     outline-width: 10em;
     outline-color: blue;
+    text-shadow: 2px 2px 5px rgba(1, 22, 3, 0.8);
+}
+
+.p4{
+    background-image: linear-gradient(45deg, #ff7f50, #1e90ff);
 }
