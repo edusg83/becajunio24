@@ -1,53 +1,59 @@
+/*a*/
 
-p:first-of-type{
-    color: aqua;
-}
 
-p:last-child{
-    color: green;
-}
-
-p:nth-child(even){
-    color: blue;
-}
-
-p:nth-child(odd){
-    color:yellow;
-}
-
-section:only-child{
-    color: gray;
-}
-
-.p1{
-    font-size: 3em;
+/*b*/
+main p:first-child{
+    color: red;
+    font-size: 48px;
     text-align: center;
     margin: 1em;
 }
 
-.p3{
-    font-size: 10em;
+
+/*c*/
+main p:last-child{
+    color: gray;
+    font-size: 160px;
     text-decoration: overline;
     margin-top: 2em;
 }
 
-section{
-    background-image: url("../images/descarga.png");
-    background-repeat: repeat-x;
+/*d*/
+
+main p:nth-child(odd){
+    background-color: yellow;
 }
 
-.p2{
-    border: 2px;
-    border-style: solid;
-    border-radius: 2em;
-    outline-width: 10em;
-    outline-color: blue;
-    text-shadow: 2px 2px 5px rgba(1, 22, 3, 0.8);
-    
-    transform: rotate(180deg);
+
+/* Ejercicio 9*/
+p:nth-child(2){
+    text-shadow: rgb(150,150,150)5px,5px,5px;
+    animation: animacion 1s ease-in-out 0s infinite normal none;
+}
+p:nth-child(4){
+    background: -webkit-linear-gradient(top, #FFFFFF, #666666);
+    transform: perspective(500px) rotate3d(0, 1, 0, 45deg);
 }
 
-.p4{
-    background-image: linear-gradient(45deg, #ff7f50, #1e90ff);
-    transform: rotate3d(1,1,0, 45deg);
+@keyframes animacion {
+    0%{
+        color: red;
+        transform: translate(0,0);
+    }
+    25%{
+        color: yellow;
+        transform: translate(200,0);
+    }
+    50%{
+        color: blue;
+        transform: translate(200,200);
+    }
+    75%{
+        color: green;
+        transform: translate(0,200);
+    }
+    100%{
+        color: red;
+        transform: translate(0,0);
+    }
 }
