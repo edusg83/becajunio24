@@ -1,7 +1,5 @@
 /*a*/
-main p:nth-child(2){
-    color: whitesmoke;
-}
+
 
 /*b*/
 main p:first-child{
@@ -21,23 +19,20 @@ main p:last-child{
 }
 
 /*d*/
-main p:nth-child(even){
-    background-color: red;
-}
+
 main p:nth-child(odd){
     background-color: yellow;
 }
 
-/*Ejercicio 7*/
-section{
-    background-image: url('../images/logoeoiok.jpg');
-    background-repeat: repeat-x;
-}
 
 /* Ejercicio 9*/
 p:nth-child(2){
+<<<<<<< HEAD
     text-shadow: rgb(150,150,150)5px 5px 5px;
     transform: rotate(180deg);
+=======
+    text-shadow: rgb(37, 11, 83) 5px 5px 15px;
+>>>>>>> c143b289c920628db89d3a3331d778f8d86433dc
 }
 p:nth-child(4){
     background: -webkit-linear-gradient(top, #FFFFFF, #666666);
