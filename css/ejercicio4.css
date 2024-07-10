@@ -36,7 +36,7 @@ p:nth-child(4){
 }
 
 /*Ejercicio 11*/
-@keyframes animacion {
+/*@keyframes animacion {
     0%{
         color: red;
         transform: translate(0px,0px);
@@ -58,7 +58,7 @@ p:nth-child(4){
         transform: translate(0px,0px);
     }
 }
-
+*/
 /*Ejercicio 12*/
 main p:nth-child(odd){
     float: left;
@@ -66,3 +66,4 @@ main p:nth-child(odd){
 main p:nth-child(even){
     float: right;
 }
+

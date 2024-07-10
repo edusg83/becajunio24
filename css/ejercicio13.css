@@ -1,0 +1,15 @@
+#sec1-a {
+    display: flex;
+}
+
+#sec1-b {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#sec1-c {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
