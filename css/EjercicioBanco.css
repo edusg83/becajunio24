@@ -5,6 +5,9 @@
 h1{
     color: rgb(181, 156, 230);
     padding-top: 15px;
-    text-align: center;
-    font: 2em MS Sans Serif4, Geneva;
+    font: 36px MS Sans Serif4, Geneva;
+}
+p[name="botones"]{
+    color: bisque;
+    text-align: right;
 }
