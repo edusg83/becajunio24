@@ -1,0 +1,15 @@
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#banner {
+    background-image: url('./img/banner.jpeg');
+    background-size: cover;
+    height: 25em;
+}
+
+#banner h1 {
+    font-size: 4em;
+    color: #ffffff;
+}
