@@ -23,7 +23,7 @@
                 <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Trabajos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -31,23 +31,23 @@
     <section class="hero-section">
         <div class="container">
             <h1>Esta es nuestra primera WEB con EOI</h1>
-            <a href="#" class="btn btn-primary">Vamos</a>
+            <a href="Test.html" target="_blank" class="btn btn-primary">Vamos</a>
         </div>
     </section>
     <section class="info-section">
         <div class="container">
-            <p>¡Hola! Soy alumno de la EOI. Lo hacemos bien, diseños limpios. ¡Echa un vistazo!</p>
-            <a href="#" class="btn btn-secondary">Explorar más</a>
+            <p>Echa un vistazo a nuestros clientes</p>
+            <a href="#clientes" class="btn btn-secondary">Explorar más</a>
         </div>
     </section>
 
-    <section class="main-content">
+    <section class="main-content cliente-section" id="clientes">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <h2>Clientes Información</h2>
-                    <table class="table table-bordered">
-                        <thead>
+                    <table class="table table-bordered table-striped table-dark">
+                        <thead class="thead-dark">
                             <tr>
                                 <th>Clientes</th>
                                 <th>DNI</th>
@@ -70,6 +70,36 @@
                                 <td>DNI 1</td>
                                 <td>t@example.com</td>
                             </tr>
+                            <tr>
+                                <td>Nombre 4</td>
+                                <td>DNI 1</td>
+                                <td>t@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Nombre 5</td>
+                                <td>DNI 1</td>
+                                <td>t@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Nombre 6</td>
+                                <td>DNI 1</td>
+                                <td>t@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Nombre 7</td>
+                                <td>DNI 1</td>
+                                <td>t@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Nombre 8</td>
+                                <td>DNI 1</td>
+                                <td>t@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Nombre 9</td>
+                                <td>DNI 1</td>
+                                <td>t@example.com</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -78,9 +108,14 @@
     </section>
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="container" id="contacto">
             <p>Práctica EOI - Todos los derechos reservados</p>
-            <p>Contacto: (555) 555-555</p>
+            <div class="d-flex justify-content-end">
+                <p>Contacto: (555) 555-555 <br>
+                    Jose Antonio <br>
+                    Email: t@email.com
+                </p>
+            </div>
         </div>
     </footer>
 </body>

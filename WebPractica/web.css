@@ -8,6 +8,11 @@ body {
     text-align: center;
     padding: 100px 0;
 }
+
+.cliente-section{
+    background-color: #5e5c5c;
+}
+
 .hero-section h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -17,7 +22,7 @@ body {
     padding: 10px 30px;
 }
 .info-section {
-    background-color: #333;
+    background-color: #a4a5f5b6;
     color: white;
     text-align: center;
     padding: 50px 0;
