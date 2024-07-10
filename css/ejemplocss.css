@@ -1,0 +1,22 @@
+nav {
+  width: 80%;
+  height: 23px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  font-weight: bold;
+  font-size: 1em;
+  margin: 10px 15px 0 0;
+}
+
+/*# sourceMappingURL=ejemplocss.css.map */
+
+/*# sourceMappingURL=ejemplocss.css.map */
