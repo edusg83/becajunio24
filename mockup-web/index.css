@@ -13,3 +13,15 @@ a {
     font-size: 4em;
     color: #ffffff;
 }
+
+#blog-clientes {
+    gap: 1em;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-black {
+    color: #000000;
+}
