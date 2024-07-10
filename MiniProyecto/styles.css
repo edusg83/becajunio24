@@ -1,0 +1,41 @@
+.navbar-custom {
+    background-color: #dcdcdc;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #ff6600;
+    font-size: 1.5rem;
+}
+.header-image {
+    position: relative;
+    background: url('images/cabecera.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    color: white;
+}
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.header-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.highlight-section {
+    background-color: #333;
+    color: #f8f9fa;
+}
+.footer-social a {
+    color: white;
+    margin-right: 15px;
+}
+.footer-brand {
+    background-color: #ff6600;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+}
