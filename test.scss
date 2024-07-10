@@ -1,0 +1,46 @@
+$type: matador;
+
+
+nav {
+    width: 80%;
+    height: 23px;
+    &:hover { text-decoration:underline;}
+    ul { list-style-type: none; }
+    li {
+    float: left;
+    a { font-weight: bold; }
+    }
+    }
+
+p {
+@if $type == ocean {
+color: blue;
+} @else if $type == matador {
+color: red;
+} @else if $type == monster {
+color: green;
+} @else {
+color: black;}}
+
+h1{
+    @if $type == matador{
+        size: 10em;
+    }
+}
+
+@mixin rounded-top-left {
+    $vert: top;
+    $horz: left;
+    $radius: 10px;
+    border-#{$vert}-#{$horz}-radius: $radius;
+    -moz-border-radius-#{$vert}#{$horz}: $radius;
+    -webkit-border-#{$vert}-#{$horz}-radius: $radius;
+    }
+    
+
+#navbar li { @include rounded-top-left; }
+#footer { @include rounded-top-left; }
+
+button{
+    color: purple;
+}
