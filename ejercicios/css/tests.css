@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.hero-section {
+    background: url('https://static.vecteezy.com/system/resources/previews/002/776/724/original/banner-city-landscape-of-silhouettes-vector.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.hero-section .btn {
+    font-size: 1.2em;
+    padding: 10px 30px;
+}
+.info-section {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+.main-content {
+    padding: 50px 0;
+}
+.main-content .col {
+    text-align: center;
+    padding: 20px;
+}
+.main-content img {
+    max-width: 100px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
