@@ -1,6 +1,6 @@
 
 //A
-var cadena1 = "CADENA1";
+let cadena1 = "CADENA1";
 
 //B
 console.log(cadena1.indexOf("ENA"));
@@ -15,5 +15,5 @@ console.log(cadena1.toLowerCase());
 console.log(cadena1.replace("DE", "ME"));
 
 //F
-var cadena2 = "CADENA2";
-console.log(cadena1+cadena2);
+let cadena2 = "CADENA2";
+console.log(cadena2+cadena1);
