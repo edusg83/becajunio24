@@ -8,7 +8,7 @@ console.log(cadena1.indexOf("ENA"));
 console.log('Ultimo caracter: ', cadena1.charAt(cadena1.length -1));
 
 /* d */
-console.log(cadena1.toLowerCase);
+console.log(cadena1.toLowerCase());
 
 /* e */
 console.log(cadena1.replace("DE","ME"));
