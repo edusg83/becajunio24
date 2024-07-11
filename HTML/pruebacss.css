@@ -1,0 +1,124 @@
+/* Ejercicio 4 */
+#sec1 p:nth-child(2) {
+  color: black;
+}
+
+#sec1 p:first-child {
+  color: red;
+}
+
+#sec1 p:last-child {
+  color: red;
+}
+
+#sec1 p:nth-child(even) {
+  background-color: red;
+}
+
+#sec1 p:nth-child(odd) {
+  background-color: yellow;
+}
+
+#sec1:only-child {
+  color: red;
+}
+
+#sec1 p:first-of-type {
+  color: red;
+}
+
+#sec1 p:not(.p1, .p2, .p3, .p4) {
+  background-color: red;
+}
+
+/* Ejercicio 5 */
+.p1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.p3 {
+  font-size: 10em;
+  text-decoration: overline;
+}
+
+/* Ejercicio 6 */
+.p1 {
+  margin: 1em;
+}
+
+.p3 {
+  margin-top: 2em;
+}
+
+/* Ejercicio 7 */
+#sec1 {
+  background-image: url('logo.png');
+  background-repeat: repeat-x;
+}
+
+/* Ejercicio 8 */
+.p2 {
+  border-style: solid;
+  border-radius: 2em;
+  border: 2px solid blue;
+  width: 10em;
+}
+
+/* Ejercicio 9 */
+
+.p2 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.p4 {
+  font-size: 5em;
+  background: linear-gradient(45deg, #ff6b6b, #f7d794);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Ejercicio 10 */
+
+.p2 {
+  transform: rotate(180deg);
+}
+
+.p4 {
+  transform: rotate3d(1, 1, 0, 45deg);
+}
+
+/* Ejercicio 11 */
+
+@keyframes colorPositionChange {
+  0% {
+    background-color: red;
+    transform: translate(0, 0);
+  }
+  25% {
+    background-color: yellow;
+    transform: translate(600px, 0);
+  }
+  50% {
+    background-color: blue;
+    transform: translate(600px, 600px);
+  }
+  75% {
+    background-color: green;
+    transform: translate(0, 600px);
+  }
+  100% {
+    background-color: red;
+    transform: translate(0, 0);
+  }
+}
+
+.p2 {
+  animation: colorPositionChange 5s infinite;
+}
+
+
+
+
+
+

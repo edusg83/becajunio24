@@ -1,0 +1,23 @@
+$altura: height;
+$ancho: width;
+$el1:5em;
+nav {
+#{$ancho}: 80%;
+#{$altura}: 23px;
+ul { list-style-type: none; }
+li {
+float: left;
+a { font-weight: bold; font-size: $el1;}
+}
+}
+
+nav {
+    width: 80%;
+    height: 23px;
+    &:hover { text-decoration:underline;}
+    ul { list-style-type: none; }
+    li {
+    float: left; 
+    a { font-weight: bold; }
+    }
+    }

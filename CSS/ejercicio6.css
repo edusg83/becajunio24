@@ -1,0 +1,60 @@
+
+p:nth-of-type(2) {
+    color: black;
+}
+
+
+p:first-of-type {
+    color: red;
+}
+
+
+p:last-of-type {
+    color: red;
+}
+
+p:nth-of-type(even) {
+    background-color: red;
+}
+
+p:nth-of-type(odd) {
+    background-color: yellow;
+}
+
+main > section:only-child {
+    color: red;
+}
+
+p:first-of-type {
+    color: red;
+}
+
+p:not(:first-of-type) {
+    background-color: red;
+}
+
+.p1 {
+    color: black;
+    font-size: 3em;
+    text-align: center;
+    margin: 1em;
+}
+
+.p2 {
+    border: 2px solid blue;
+    border-radius: 2em;
+    width: 10em;
+    padding: 10px;
+}
+
+.p3 {
+    color: black;
+    font-size: 10em;
+    text-decoration: overline;
+    margin-top: 2em;
+}
+
+section {
+    background-image: url('logo.png');
+    background-repeat: repeat-x; 
+}

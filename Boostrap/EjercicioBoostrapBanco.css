@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #c7c7c7;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007c3e;
+}
+
+.bank-title{
+    font-weight: bold;
+    color: #007c3e;
+}
+
+.account-balance {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.account-details {
+    padding: 10px 0;
+}
+
+.account-actions {
+    text-align: right;
+}
