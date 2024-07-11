@@ -5,7 +5,7 @@ let cadena1 ="CADENA1";
 console.log(cadena1.indexOf("ENA"));
 
 /* c */
-console.log('Ultimo caracter: ', cadena1.charAt(-1));
+console.log('Ultimo caracter: ', cadena1.charAt(cadena1.length -1));
 
 /* d */
 console.log(cadena1.toLowerCase);
