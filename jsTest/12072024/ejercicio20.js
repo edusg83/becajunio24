@@ -7,3 +7,5 @@ document.body.appendChild(p);
 
 
 console.log('Elemento <p> añadido:', p);
+
+p.setAttribute("id", "parrafo1");
