@@ -1,10 +1,11 @@
 var array = new Array();
 array = [1,2,3,4];
 
+//Cambio ejercicio 6
 var length = array.length;
-for(var i = 0; i < length; i++)
+for(var a in array)
 {
-    switch(i)
+    switch(a)
     {
         case 0:
             console.log("UNO")
@@ -24,6 +25,14 @@ for(var i = 0; i < length; i++)
     }
 }
 
+//Correccion ejercicio 5
+var other = array.push(3);
+console.log(other);
+var otherA = array.splice(3);
+console.log(otherA);
+
+
+//Ejercicio 5(mal entendido)
 var array2 = new Array();
 array2 = [1,2,3,4,3];
 
