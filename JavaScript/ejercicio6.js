@@ -5,7 +5,7 @@ let array1 = [1, 2, 3, 4];
 console.log(array1);
 
 //B
-for (let index = 0; index < array.length; index++) {
+array1.forEach(element => {
     switch (element) {
         case 1:
             console.log("UNO");
@@ -22,7 +22,7 @@ for (let index = 0; index < array.length; index++) {
         default:
             break;
     }
-}
+});
 
 //C
 array1.push(3);
