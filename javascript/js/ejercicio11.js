@@ -1,13 +1,14 @@
 let funciones={
     colorVerde : function(){
-        console.log("VERDE")
+        console.log("VERDE");
     },
 
 }
 funciones.colorVerde();
 
 funciones.colorRojo = function(){
-    console.log("ROJO")
+    console.log("ROJO");
+    this.colorVerde();
 }
 
 funciones.colorRojo();
