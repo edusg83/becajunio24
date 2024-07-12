@@ -1,16 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
 
-    let nuevoParrafo = document.createElement('p');
+    let Parrafo = document.createElement('p');
     
-    let textoFuerte = document.createElement('strong');
-    textoFuerte.textContent = "Este texto está añadido dinámicamente";
+    let textoStrong = document.createElement('strong');
+
+    textoStrong.textContent = "Este texto está añadido dinámicamente";
     
+    Parrafo.appendChild(textoStrong);
 
-    nuevoParrafo.appendChild(textoFuerte);
+    document.body.appendChild(Parrafo);
     
-    nuevoParrafo.setAttribute('id', 'parrafo1');
+    Parrafo.setAttribute('id', 'parrafo1');
 
-    document.body.appendChild(nuevoParrafo);
-
-    console.log('Elemento <p> añadido:', nuevoParrafo);
-});
+    console.log('Elemento <p> añadido:', Parrafo);
