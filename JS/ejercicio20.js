@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // a)
-    const paragraph = document.createElement("p");
+    let paragraph = document.createElement("p");
     paragraph.textContent = "Este texto está añadido dinámicamente";
     
  
