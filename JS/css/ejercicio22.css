@@ -1,0 +1,11 @@
+#datosPersonales {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+#resultado {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #000;
+}
