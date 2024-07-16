@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="pantalla" disabled>
+        <div class="buttons">
+            <button type="button" id="numero7" onclick="addNumero('7')">7</button>
+            <button type="button" id="numero8" onclick="addNumero('8')">8</button>
+            <button type="button" id="numero9" onclick="addNumero('9')">9</button>
+            <button type="button" id="operadorSuma" onclick="addNumero('+')">+</button>
+            <button type="button" id="numero4" onclick="addNumero('4')">4</button>
+            <button type="button" id="numero5" onclick="addNumero('5')">5</button>
+            <button type="button" id="numero6" onclick="addNumero('6')">6</button>
+            <button type="button" id="operadorResta" onclick="addNumero('-')">-</button>
+            <button type="button" id="numero1" onclick="addNumero('1')">1</button>
+            <button type="button" id="numero2" onclick="addNumero('2')">2</button>
+            <button type="button" id="numero3" onclick="addNumero('3')">3</button>
+            <button type="button" id="operadorMulti" onclick="addNumero('*')">*</button>
+            <button type="button" id="numero0" onclick="addNumero('0')">0</button>
+            <button type="button" id="decimal" onclick="addNumero('.')">.</button>
+            <button type="button" id="calcularResultado" onclick="calcular()">=</button>
+            <button type="button" id="operadorDiv" onclick="addNumero('/')">/</button>
+        </div>
+    </div>
+</body>
+<script src="calculadora.js"></script>
+</html>

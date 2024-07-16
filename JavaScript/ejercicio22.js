@@ -1,11 +1,11 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    const formulario = document.querySelector('form');
-    const nombreInput = document.getElementById('nombreInput');
-    const emailInput = document.getElementById('emailInput');
-    const provinciaSelect = document.getElementById('provincia');
-    const mensajeError = document.createElement('div');
+    let formulario = document.querySelector('form');
+    let nombreInput = document.getElementById('nombreInput');
+    let emailInput = document.getElementById('emailInput');
+    let provinciaSelect = document.getElementById('provincia');
+    let mensajeError = document.createElement('div');
 
     // Escuchar el evento click del botón Enviar
     formulario.addEventListener('submit', validarFormulario);
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
 
         // Verificar el campo Nombre
-        const nombre = nombreInput.value.trim();
+        let nombre = nombreInput.value.trim();
         if (!nombre.startsWith('ANTONIO')) {
             mostrarMensajeError('El campo Nombre debe empezar con "ANTONIO".');
             return;
@@ -58,6 +58,5 @@ document.addEventListener("DOMContentLoaded", function () {
             formulario.removeChild(mensajeError);
         }
     }
-
 
 });
