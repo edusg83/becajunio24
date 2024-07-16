@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 22</title>
+    <link rel="stylesheet" href="ejercicio22.css">
+    
+    <script defer src="ejercicio22.js"></script>
+
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Datos Personales</h1>
+    <form id="formulario">
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombreInput" name="nombre" maxlength="20" required>
+        <br>
+        <br>
+        <label for="email">Email</label><br>
+        <input type="email" id="emailInput" name="email" required>
+        <br>
+        <br>
+        <label for="provincia">Provincia</label><br>
+        <select id="provincia" name="provincia">
+            <option value="sevilla">Sevilla</option>
+            <option value="cordoba">Córdoba</option>
+            <option value="malaga">Málaga</option>
+            <option value="huelva">Huelva</option>
+        </select><br><br>
+        <button type="submit" id="botonEnviar">Enviar</button>
+    </form>
+
+     <div id="valoresIntroducidos"></div>
+     <div id="mensajeError" style="display: none;">Los datos del formulario no son correctos.</div>
+
+ </body>
+
+</html>
