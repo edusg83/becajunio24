@@ -1,11 +1,15 @@
 
+let screenValue = document.getElementById('pantalla');
+
 function addNumero(value) {
-    document.getElementById('pantalla').value += value;
+    screenValue.value += value;
 }
 
 function calcular() {
-    let screenValue = document.getElementById('pantalla').value;
-    let result = eval(screenValue);
-    document.getElementById('pantalla').value = result;
+    let result = eval(screenValue.value);
+    screenValue.value = result;
+}
 
+function reinicio() {
+    screenValue.value = "";
 }

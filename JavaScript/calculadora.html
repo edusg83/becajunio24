@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text" id="pantalla" disabled>
+        <input type="text" id="pantalla" placeholder="0" disabled>
         <div class="buttons">
             <button type="button" id="numero7" onclick="addNumero('7')">7</button>
             <button type="button" id="numero8" onclick="addNumero('8')">8</button>
@@ -29,6 +29,9 @@
             <button type="button" id="decimal" onclick="addNumero('.')">.</button>
             <button type="button" id="calcularResultado" onclick="calcular()">=</button>
             <button type="button" id="operadorDiv" onclick="addNumero('/')">/</button>
+            <button type="button" id="reinicio" onclick="reinicio()">c</button>
+            <button type="button" id="abrirParentesis" onclick="addNumero('(')">(</button>
+            <button type="button" id="cerrarParentesis" onclick="addNumero(')')">)</button>
         </div>
     </div>
 </body>
