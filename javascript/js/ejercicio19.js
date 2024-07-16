@@ -1,5 +1,7 @@
-document.getElementsByTagName("header");
+let nuevoParrafo = document.createElement('p');
+nuevoParrafo.textContent = "Este texto está añadido dinámicamente";
+document.body.appendChild(nuevoParrafo);
 
-document.getElementById("seccion");
+nuevoParrafo.setAttribute("id", "parrafo1")
 
-document.querySelector();
+console.log('Elemento <p> añadido:', nuevoParrafo);

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 22</title>
+</head>
+<body>
+    <form name="formCliente">
+        <fieldset id="info">
+            <legend>Datos Personales</legend>
+            <p>
+                <label for="nombre">nombre</label>
+                <input type="text" name="nombre" id="nom">
+            </p>
+            <p>
+                <label for="correo">email</label>
+                <input type="email" name="correo" id="email">
+            </p>
+            <p>
+                
+                <label for="provincia">provincia</label>
+                <select name="provincia" id="provinciaID">
+                    <optgroup label="Comunidad Valenciana"> 
+                        <option value="Alicante">Alicante</option>
+                        <option value="Castellon">Castellón</option>
+                    </optgroup>
+                    <optgroup label="Comunidad Murciana"> 
+                        <option value="Murcia">Alicante</option>
+                        <option value="Totana">Castellón</option>
+                    </optgroup>
+                    
+                </select>
+            </p>
+        </fieldset>
+    </form>
+    <script src="js/ejercicio22.js"></script>
+</body>
+</html>
