@@ -1,0 +1,11 @@
+.oculto {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+.correcto {
+    color: green;
+}

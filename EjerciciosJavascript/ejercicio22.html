@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 23</title>
+    <link rel="stylesheet" href="css/ejercicio22.css">
+</head>
+<body>
+    <form id="formulario">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia">
+                <option value="Alicante">ALICANTE</option>
+                <option value="Castellón">CASTELLÓN</option>
+                <option value="Murcia">MURCIA</option>
+                <option value="Valencia">VALENCIA</option>
+                <option value="Pontevedra">PONTEVEDRA</option>
+            </select>
+            <br>
+            <button type="submit">Enviar</button>
+            <p id="mensaje" class="oculto"></p>
+            <div id="resultado" class="oculto"></div>
+        </fieldset>
+    </form>
+    <script src="js/ejercicio22.js"></script>
+</body>
+</html>
