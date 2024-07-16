@@ -18,11 +18,22 @@
             <br>
             <label for="provincia">Provincia:</label>
             <select id="provincia" name="provincia">
-                <option value="Alicante">ALICANTE</option>
-                <option value="Castellón">CASTELLÓN</option>
-                <option value="Murcia">MURCIA</option>
-                <option value="Valencia">VALENCIA</option>
-                <option value="Pontevedra">PONTEVEDRA</option>
+                <optgroup label="Comunidad Valenciana">
+                    <option value="Alicante">Alicante</option>
+                    <option value="Castellón">Castellón</option>
+                    <option value="Valencia">Valencia</option>
+                </optgroup>
+                <optgroup label="Galicia">
+                    <option value="A Coruña">A Coruña</option>
+                    <option value="Lugo">Lugo</option>
+                    <option value="Ourense">Ourense</option>
+                    <option value="Pontevedra">Pontevedra</option>
+                </optgroup>
+                <optgroup label="Región de Murcia">
+                    <option value="Murcia">Murcia</option>
+                    <option value="Cartagena">Cartagena</option>
+                    <option value="Lorca">Lorca</option>
+                </optgroup>
             </select>
             <br>
             <button type="submit">Enviar</button>
