@@ -1,0 +1,28 @@
+
+body{
+    background-color: pink;
+    display: grid;
+    place-content: center;
+}
+
+button{
+    background-color: blueviolet;
+    size: 33em;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc{
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.screen{
+    grid-column: 1 / -1;
+    background-color: palevioletred;
+    padding: 2px;
+    text-align: end;
+}
