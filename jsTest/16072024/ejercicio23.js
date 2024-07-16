@@ -22,22 +22,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
 
         if (!valid) {
-            mensaje.value = 'Los datos del formulario no son correctos';
+            mensaje.innerHTML = 'Los datos del formulario no son correctos';
         } else {
-            resultados.value = `
+            mensaje.innerHTML="";
+            resultados.innerHTML = `
                 <p><strong>Nombre:</strong> ${nombre}</p>
                 <p><strong>Email:</strong> ${email}</p>
                 <p><strong>Provincia:</strong> ${provincia}</p>
             `;
         }
 
-        formulario.addEventListener('input', function() {
-            if(valid)
-            {
-                mensaje.value = "";
-            }
-            
-        });
+       
     });
 });
 
