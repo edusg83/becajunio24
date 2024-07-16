@@ -6,28 +6,18 @@ let provinciajs = formulario.provincia;
 
 let correo = formulario.correo;
 
-function correctoono(){
-    document.forms.formCliente.onsubmit = function(){
+
+    function valida(){
         let ok = false;
-        if( correo.value == " " && provinciajs.value == " " && (nombre.length > 20 || !nombre.startsWith('ANTONIO'))){
-            alert("Los datos del formulario no son correctos")
+        if( correo.value == "" || provinciajs.value == "" || nombrejs.length > 20 || !nombrejs.startsWith('ANTONIO')){
+            document.getElementById("errores").innerHTML="Tienes algún error en el formulario";
             ok = false;
         }
         else{
             ok = true;
         }
         
-            
     };
-    window.onload = function(){
-        correctoono();
-    };
-
-}
+    
 
 
-provinciajs.onchange = function(){
-    let indice = provinciajs.selectedIndex;
-    let valor = provinciajs.options[indice].value;
-    let texto = provinciajs.options[indice].text;
-};
