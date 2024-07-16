@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css"> 
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calculadora">
+        <div id="display">
+            <input type="text" id="pantalla" readonly>
+        </div>
+        <div id="botones">
+            <button type="button" onclick="añadirNumero(7)">7</button>
+            <button type="button" onclick="añadirNumero(8)">8</button>
+            <button type="button" onclick="añadirNumero(9)">9</button>
+            <button type="button" onclick="añadirOperacion('/')">÷</button>
+            <br>
+            <button type="button" onclick="añadirNumero(4)">4</button>
+            <button type="button" onclick="añadirNumero(5)">5</button>
+            <button type="button" onclick="añadirNumero(6)">6</button>
+            <button type="button" onclick="añadirOperacion('*')">x</button>
+            <br>
+            <button type="button" onclick="añadirNumero(1)">1</button>
+            <button type="button" onclick="añadirNumero(2)">2</button>
+            <button type="button" onclick="añadirNumero(3)">3</button>
+            <button type="button" onclick="añadirOperacion('-')">-</button>
+            <br>
+            <button type="button" onclick="añadirNumero(0)">0</button>
+            <button type="button" onclick="añadirOperacion('.')">.</button>
+            <button type="button" onclick="calcular()">=</button>
+            <button type="button" onclick="añadirOperacion('+')">+</button>
+        </div>
+    </div>
+    <script src="claculadora.js"></script>
+</body>
+</html>

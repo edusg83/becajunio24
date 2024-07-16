@@ -1,0 +1,46 @@
+body {
+    font-family: Georgia, serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+#calculadora {
+    background: gray;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0.1, 0);
+    width: 260px;
+}
+
+#display {
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: right;
+}
+
+#pantalla {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 1.5em;
+    color: #000;
+    text-align: right;
+}
+
+
+#botones button {
+    padding: 15px;
+    margin: 5px;
+    font-size: 1.5em;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+}
+
