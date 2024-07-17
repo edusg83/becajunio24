@@ -1,9 +1,9 @@
 axios.get('https://eoi.wiremockapi.cloud/users')
     .then(response => {
-        if (!response.ok) {
+        if (response.status!==200) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
-        return response.json();
+        return response.data;
     })
     .then(data => {
         console.log(data);

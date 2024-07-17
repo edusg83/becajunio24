@@ -11,11 +11,10 @@
             const urlUsers = 'https://eoi.wiremockapi.cloud/clientes';
 
             axios.get(urlUsers,{headers})
-            .then(response=>response.json())
-            .then(data=>{
-                const arrayClientes = data.UserListData;
-                arrayClientes.array.forEach(element => {
-                    let tabla = `<table id="dataTable">
+            .then(response=>{
+                const arrayClientes = response.data.UserListData;
+                let tabla=``;
+                tabla = `<table id="dataTable">
                         <thead>
                             <tr>
                                 <th>Id</th>
@@ -26,9 +25,12 @@
                         </thead>
                         <tbody>`;
                     
-                    let finTabla = `</tbody>
-                    </table> `
+                            let finTabla = `</tbody>
+                    </table>`;
                     let filas = ``;
+                arrayClientes.forEach(element => {
+                   
+                    
                     filas += `
                     <tr>
                         <td>${element.id}</td>
@@ -36,16 +38,17 @@
                         <td>${element.nombre}</td>
                         <td>${element.email}</td>
                     </tr>`;
-
-                    tabla+= filas+finTabla;
+                    
+                })
+                tabla+= filas+finTabla;
                     document.getElementById("tablaResultado").innerHTML = tabla;
 
-
-                });
-            })
+            });
         </script>
     </head>
     
-
+<body>
+    <div id="tablaResultado"></div>
+</body>
 
 </html>
