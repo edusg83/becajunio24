@@ -9,7 +9,7 @@
             const method = request.method;
             const credentials = request.credentials;
 
-            fetch(request)
+            axios.get(request)
             .then(response=>response.json())
             .then(data=>{
                 const arrayClientes = data.UserListData;
