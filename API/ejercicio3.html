@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usuario y Direcciones</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card {
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h3 id="nombreApellido"></h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Calle</th>
+                        <th>Ciudad</th>
+                        <th>Estado</th>
+                        <th>CP</th>
+                    </tr>
+                </thead>
+                <tbody id="direccionesTable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const request = new Request('https://eoi.wiremockapi.cloud/users');
+
+        fetch(request)
+        .then(response => response.json())
+        .then(data => {
+            if (data && data.UserListData && Array.isArray(data.UserListData) && data.UserListData.length > 0) {
+                const usuario = data.UserListData[0];
+                const nombreApellido = `${usuario.nombre} ${usuario.apellido}`;
+                document.getElementById('nombreApellido').textContent = nombreApellido;
+
+                const direccionesTable = document.getElementById('direccionesTable');
+
+                if (usuario.direcciones && Array.isArray(usuario.direcciones)) {
+                    usuario.direcciones.forEach(direccion => {
+                        let newRow = direccionesTable.insertRow();
+
+                        let cellCalle = newRow.insertCell(0);
+                        let cellCiudad = newRow.insertCell(1);
+                        let cellEstado = newRow.insertCell(2);
+                        let cellCP = newRow.insertCell(3);
+
+                        cellCalle.textContent = direccion.calle;
+                        cellCiudad.textContent = direccion.ciudad;
+                        cellEstado.textContent = direccion.estado;
+                        cellCP.textContent = direccion.cp;
+                    });
+                } else {
+                    console.error('El usuario no tiene direcciones.');
+                }
+            } else {
+                console.error('No hay datos de usuario disponibles o el formato es incorrecto.');
+            }
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+</html>
