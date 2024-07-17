@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Fetch</title>
+</head>
+<body>
+    <script>
+        fetch('https://eoi.wiremockapi.cloud/clientes')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data); 
+                const output = document.createElement('pre');
+                output.textContent = JSON.stringify(data, null, 2);
+                document.body.appendChild(output);
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+            });
+    </script>
+</body>
+</html>
