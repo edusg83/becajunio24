@@ -14,6 +14,7 @@ console.log(cadena1.toLowerCase());
 //E
 console.log(cadena1.replace("DE", "ME"));
 
+
 //F
 let cadena2 = "CADENA2";
 console.log(cadena2+cadena1);

@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <script>
+
+        const request = new Request('https://eoi.wiremockapi.cloud/clientes');
+        const url = request.url;
+        const method = request.method;
+        const credentials = request.credentials;
+
+        fetch(request)
+            .then(response => response.json())
+            .then(data => {
+                const arrayClientes = data.UserListData;
+                const clientesContainer = document.getElementById('clientes-container');
+                let html = `
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Nombre</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                `;
+
+                arrayClientes.forEach(element => {
+                    html += `
+                        <tr>
+                            <td>${element.username}</td>
+                            <td>${element.nombre}</td>
+                            <td>${element.email}</td>
+                        </tr>
+                    `;
+                });
+
+                html += `
+                        </tbody>
+                    </table>
+                `;
+
+                clientesContainer.innerHTML = html;
+            })
+            ;
+
+
+    </script>
+</head>
+
+<body>
+    <div id="clientes-container"></div>
+</body>
+
+</html>

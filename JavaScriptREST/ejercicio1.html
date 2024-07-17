@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script>
+
+        const request = new Request('https://eoi.wiremockapi.cloud/clientes');
+        const url = request.url;
+        const method = request.method;
+        const credentials = request.credentials;
+
+        fetch(request)
+        .then(response=>response.json())
+        .then(data=>{
+            const arrayClientes = data.UserListData;
+            arrayClientes.forEach(element => {
+                console.log(element.username);
+                console.log(element.nombre);
+                console.log(element.email);
+            });
+        })
+    </script>
+</head>
+</html>
