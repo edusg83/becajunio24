@@ -8,10 +8,16 @@
 
             fetch(request)
             .then(response=>response.json())
-            -then(data=>{
-                console.log(data);
-                const username = credentials.UserListData[0].username;
+            .then(data=>{
+                const arrayClientes = data.UserListData;
+                arrayClientes.array.forEach(element => {
+                    let tabla = '<table id="dataTable">
+                        <thead '
+                });
             })
         </script>
     </head>
+    
+
+
 </html>
