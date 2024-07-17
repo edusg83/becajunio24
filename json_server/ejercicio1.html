@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="ejercicio1.js"></script>
+</head>
+<body>
+    <h1>Enviar Datos al Servidor</h1>
+    <form id="formulario">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="description">Descripción:</label>
+        <input type="text" id="description" name="description" required><br><br>
+        
+        <label for="assignedTo">Asignado a:</label>
+        <input type="text" id="assignedTo" name="assignedTo" required><br><br>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

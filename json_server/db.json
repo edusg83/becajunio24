@@ -1,0 +1,15 @@
+{
+  "user": [
+    {
+      "id": "dbc0",
+      "name": "Alejandro",
+      "description": "java json",
+      "assignedTo": "algo"
+    }
+  ],
+  "event": [],
+  "message": [],
+  "reaction": [],
+  "relationship": [],
+  "assistance": []
+}
