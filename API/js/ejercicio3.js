@@ -9,9 +9,7 @@ axios.get('https://eoi.wiremockapi.cloud/users')
         console.log(data);
         displayFirstUser(data.arrayUsuarios[0]);
     })
-    .catch(error => {
-        console.error('There has been a problem with your fetch operation:', error);
-    });
+
 
 function displayFirstUser(user) {
     document.getElementById('user-name').textContent = `${user.nombre} ${user.apellidos}`;

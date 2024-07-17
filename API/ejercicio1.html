@@ -4,12 +4,13 @@
         <divid="tablaResultado">
         </div>
         <script>
-            const request = new Request('https://eoi.wiremockapi.cloud/clientes');
-            const url = request.url;
-            const method = request.method;
-            const credentials = request.credentials;
+            const headers = {
+                'Conten-Type':'application/json',
+                'Access-Control-Allow-Origin' : '*'
+            };
+            const urlUsers = 'https://eoi.wiremockapi.cloud/clientes';
 
-            axios.get(request)
+            axios.get(urlUsers,{headers})
             .then(response=>response.json())
             .then(data=>{
                 const arrayClientes = data.UserListData;
