@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tablaResultado">
+</div>
+</body>
+
+<script>
+    const request = new Request('https://eoi.wiremockapi.cloud/clientes');
+    const url = request.url;
+    const mehotd = request.method;
+    const credentials = request.credentials;
+
+    fetch(request).then(response => response.json())
+    .then(data => {
+        let tabla = 
+        `<table id = "dataTable">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Email</th>
+                    <th>nombre</th>
+                </tr>
+            </thead>
+            <tbody>`;
+
+        let finTabla = `</tbody>
+        </table>`;
+
+        let filas = ``;
+
+        var datas = data.UserListData;
+        datas.forEach(element => {
+            filas+=`
+            <tr>
+                <td>${datas.nombre}</td>
+                <td>${datas.email}</td>
+                <td>${datas.username}</td>
+            `
+        });
+
+        tabla+= filas+finTabla;
+        document.getElementById("tablaResultado").innerHTML = tabla;
+    })
+</script>
+
+</html>

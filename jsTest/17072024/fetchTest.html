@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const request = new Request('https://eoi.wiremockapi.cloud/clientes');
+        const url = request.url;
+        const mehotd = request.method;
+        const credentials = request.credentials;
+
+        fetch(request).then(response => response.json())
+        .then(data => {
+            console.log(data);
+            const username = data.UserListData[0].username;
+            console.log(username);
+
+            var datas = data.UserListData;
+            datas.forEach(element => {
+                console.log(element.username);
+                console.log(element.nombre);
+            }); 
+        })
+    </script>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
