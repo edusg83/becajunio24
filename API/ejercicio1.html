@@ -1,5 +1,8 @@
 <html>
     <head>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <divid="tablaResultado">
+        </div>
         <script>
             const request = new Request('https://eoi.wiremockapi.cloud/clientes');
             const url = request.url;
@@ -11,8 +14,32 @@
             .then(data=>{
                 const arrayClientes = data.UserListData;
                 arrayClientes.array.forEach(element => {
-                    let tabla = '<table id="dataTable">
-                        <thead '
+                    let tabla = `<table id="dataTable">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Username</th>
+                                <th>Nombre</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>`;
+                    
+                    let finTabla = `</tbody>
+                    </table> `
+                    let filas = ``;
+                    filas += `
+                    <tr>
+                        <td>${element.id}</td>
+                        <td>${element.username}</td>
+                        <td>${element.nombre}</td>
+                        <td>${element.email}</td>
+                    </tr>`;
+
+                    tabla+= filas+finTabla;
+                    document.getElementById("tablaResultado").innerHTML = tabla;
+
+
                 });
             })
         </script>
