@@ -1,0 +1,24 @@
+{
+  "user": [
+    {
+      "id": "4e0a",
+      "user": [
+        {
+          "name": "Juan Pérez",
+          "email": "juan.perez@example.com",
+          "role": "admin"
+        }
+      ],
+      "event": [],
+      "message": [],
+      "reaction": [],
+      "relationship": [],
+      "assistance": []
+    }
+  ],
+  "event": [],
+  "message": [],
+  "reaction": [],
+  "relationship": [],
+  "assistance": []
+}

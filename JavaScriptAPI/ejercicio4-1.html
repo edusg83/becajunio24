@@ -1,0 +1,46 @@
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+
+        axios.get('https://eoi.wiremockapi.cloud/clientes')
+            .then((response) => {
+
+                let arrayClientes = response.data.UserListData;
+                let clientesContainer = document.getElementById('clientes-container');
+                let html = `
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Nombre</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                `;
+
+                arrayClientes.forEach(element => {
+                    html += `
+                        <tr>
+                            <td>${element.username}</td>
+                            <td>${element.nombre}</td>
+                            <td>${element.email}</td>
+                        </tr>
+                    `;
+                });
+
+                html += `
+                        </tbody>
+                    </table>
+                `;
+
+                clientesContainer.innerHTML = html;
+            })
+            ;
+    </script>
+</head>
+<body>
+    <div id="clientes-container"></div>
+</body>
+</html>

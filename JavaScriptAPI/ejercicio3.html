@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente y Direcciones</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const request = new Request('https://eoi.wiremockapi.cloud/users');
+
+            fetch(request)
+            .then(response => response.json())
+            .then(data => {
+                const primerUsuario = data.arrayUsuarios[0];
+                const cardContainer = document.getElementById('card-container');
+                
+                let html = `
+                    <div class="card" style="width: 18rem; margin: 20px;">
+                        <div class="card-body">
+                            <h5 class="card-title">${primerUsuario.nombre} ${primerUsuario.apellidos}</h5>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Dirección</th>
+                                        <th>Código Postal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                `;
+
+                primerUsuario.direcciones.forEach(direccion => {
+                    html += `
+                        <tr>
+                            <td>${direccion.direccion}</td>
+                            <td>${direccion.cpostal}</td>
+                        </tr>
+                    `;
+                });
+
+                html += `
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                `;
+
+                cardContainer.innerHTML = html;
+            })
+        });
+    </script>
+</head>
+<body>
+    <div id="card-container" class="container"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
