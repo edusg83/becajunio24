@@ -24,7 +24,7 @@
                 <tr>
                     <th>User</th>
                     <th>Email</th>
-                    <th>nombre</th>
+                    <th>Nombre</th>
                 </tr>
             </thead>
             <tbody>`;
@@ -38,9 +38,9 @@
         datas.forEach(element => {
             filas+=`
             <tr>
-                <td>${datas.nombre}</td>
-                <td>${datas.email}</td>
-                <td>${datas.username}</td>
+                <td>${element.nombre}</td>
+                <td>${element.email}</td>
+                <td>${element.username}</td>
             `
         });
 
@@ -48,5 +48,4 @@
         document.getElementById("tablaResultado").innerHTML = tabla;
     })
 </script>
-
 </html>

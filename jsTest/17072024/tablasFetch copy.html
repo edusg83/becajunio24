@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="tablaResultado"></div>
+
+    <script>
+        const url = 'https://eoi.wiremockapi.cloud/clientes';
+
+        axios.get(url)
+            .then(response => {
+                let data = response.data;
+                let tabla = 
+                `<table id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Email</th>
+                            <th>Nombre</th>
+                        </tr>
+                    </thead>
+                    <tbody>`;
+
+                let finTabla = `</tbody>
+                </table>`;
+
+                let filas = ``;
+
+                var datas = data.UserListData;
+                datas.forEach(element => {
+                    filas += `
+                    <tr>
+                        <td>${element.nombre}</td>
+                        <td>${element.email}</td>
+                        <td>${element.username}</td>
+                    </tr>
+                    `;
+                });
+
+                tabla += filas + finTabla;
+                document.getElementById("tablaResultado").innerHTML = tabla;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>
+</body>
+</html>
