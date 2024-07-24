@@ -1,0 +1,14 @@
+{
+  "name": "pruebas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compilar":"tsc -w --module commonjs",
+    "ejecutar":"node --watch built/app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+

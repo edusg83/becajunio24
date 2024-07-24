@@ -1,0 +1,13 @@
+<input type="button" [disabled]="botonDisabled" value="Ver lista articulos">
+@for (articulo of articulos; track articulo.nombre) {
+<br>
+<section class="articulo">
+    <h2>{{articulo.nombre | uppercase}}</h2>
+    <h3>Precio: {{articulo.precio}}€</h3>
+    <p>Cantidad a comprar: {{articulo.cantidad}}</p>
+    <button (click)="comprarMas(articulo.nombre.toString())">+1</button>
+    <button (click)="comprarMenos(articulo.nombre.toString())">-1</button>
+    <h3 [class.sin-stock]="articulo.stock==0">Stock: {{articulo.stock | stock:"No disponible"}}</h3>
+    <p><img width="120" height="100" [src]="articulo.imagen" alt=""></p>
+</section>
+}

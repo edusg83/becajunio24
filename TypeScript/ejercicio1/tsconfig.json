@@ -1,0 +1,17 @@
+{
+    "compileOnSave": true,
+    
+    "compilerOptions": {
+        "lib": ["es2015", "dom", "DOM.Iterable"],
+        "outDir": "./built",
+        "allowJs": true,
+        "target": "ES2015",
+
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "watchOptions": {
+        "watchFile": "useFsEvents"
+    }
+}
