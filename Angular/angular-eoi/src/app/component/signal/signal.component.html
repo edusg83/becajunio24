@@ -1,0 +1,18 @@
+<h1>Pruebas Signal</h1>
+
+<section>
+    <h1>NgModel</h1>
+    <input type="text" [(ngModel)]="signalEdad" placeholder="Edad">
+    {{signalEdad()}}
+</section>
+
+<section>
+    <h1>Llamada a Servicio</h1>
+
+    @for(articulo of signalServicio(); track articulo.nombre){
+        <h1>{{articulo.nombre}}</h1>
+    }
+
+    {{signalServicio() |json}}
+
+</section>

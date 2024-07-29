@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -7,13 +7,12 @@ body {
     color: #333;
 }
 
-/* Encabezados */
 h1, h2, h3 {
     color: #2c3e50;
     margin: 10px 0;
 }
 
-/* Estilo de la sección de artículos */
+
 .articulo {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -23,19 +22,17 @@ h1, h2, h3 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos de los párrafos */
+
 p {
     margin: 5px 0;
 }
 
-/* Espaciado entre secciones */
+
 .br {
     margin-top: 20px;
 }
 
 .sin-stock {
     color: red;
-    font-weight: bold;
-    font-style: italic;
-    font-family: monospace
+    font-family: 'Franklin Gothic Medium'
 }

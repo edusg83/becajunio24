@@ -10,9 +10,11 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "Crear entornos": " ng g environments",
-    "Crear component": " ng g c component/item-list",
+    "Crear component": " ng g c component/signal",
     "Crear interface": " ng g i shared/Interface/store-status",
-    "Crear Pipe": "ng g pipe shared/pipes/stock"
+    "Crear Pipe": "ng g pipe shared/pipes/stock",
+    "Crear Servicio": "ng g service shared/services/item-list",
+    "Crear Module": "ng g module modules/articulos"
   },
   "private": true,
   "dependencies": {

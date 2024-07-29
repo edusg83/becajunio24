@@ -1,12 +1,12 @@
 import { Component, Version } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { StoreDashboardComponent } from './component/store-dashboard/store-dashboard.component';
 import { environment } from '../environments/environment.development';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, StoreDashboardComponent],
+  imports: [RouterOutlet, StoreDashboardComponent, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

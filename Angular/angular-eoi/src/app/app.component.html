@@ -1,6 +1,9 @@
+<header>
+    <h1>{{env.title}} - {{env.version}}</h1>
+</header>
 
-<h1>
-  {{env.storeStatus.title}} - {{env.storeStatus.version}} 
-</h1>
+<button [routerLink]="['store']">Cargar StoreDashboard</button>
+<button [routerLink]="['articulos']">Cargar Módulo Artículos</button>
+<button [routerLink]="['signal']">Probar Signal</button>
 
-<eoi-store-dashboard> </eoi-store-dashboard>
+<router-outlet> </router-outlet>

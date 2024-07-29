@@ -1,52 +1,83 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, inject, OnInit, Output } from '@angular/core';
 import { StoreStatus } from '../../shared/Interface/store-status';
-import { UpperCasePipe } from '@angular/common';
+import { AsyncPipe, UpperCasePipe, JsonPipe } from '@angular/common';
 import { StockPipe } from '../../shared/pipes/stock.pipe';
-import { articles } from '../../shared/Interface/articles';
 import { FormsModule } from '@angular/forms';
+import { StoreArticle } from '../../shared/Interface/store-article';
+import { StoreService } from '../../shared/services/store.service';
+import { Observable } from 'rxjs';
+import { ShoppingCartComponent } from '../shopping-cart/shopping-cart.component';
 
 @Component({
   selector: 'eoi-item-list',
-  standalone: true,
-  imports: [StockPipe, UpperCasePipe, FormsModule],
+  standalone: true, 
+  imports: [StockPipe, UpperCasePipe, FormsModule, AsyncPipe, JsonPipe, ShoppingCartComponent],
+  outputs: ['miClick1'],
   templateUrl: './item-list.component.html',
   styleUrl: './item-list.component.scss'
 })
-export class ItemListComponent {
+export class ItemListComponent implements OnInit {
 
-  articulos = articles;
-  botonDisabled:boolean = true;
+  articulosObservable!: Observable<Array<StoreArticle>>;
+  articulos: Array<StoreArticle> = Array.from([]);
 
-  comprarMas(nombreArticulo: string){
-     this.articulos.forEach(articulo => {
-       if(articulo.nombre === nombreArticulo){ 
-         if(articulo.stock > 0){
-            articulo.cantidad++;
-            articulo.stock--;
-         }
-       }
-     });
+  servicio = inject(StoreService);
+
+  ngOnInit(): void {
+    this.articulosObservable = this.servicio.getArticulosApiRest();
+    this.servicio.getArticulosApiRest().subscribe({
+
+      next: (articulos: Array<StoreArticle>) => {
+        this.articulos = articulos;
+      },
+      error: (error: any) => {
+        console.log('Error en la petición:', error);
+      },
+      complete: () => {
+        console.log('Petición completada.');
+      }
+
+    });
+
+
   }
 
-  comprarMenos(nombreArticulo: string){ 
-     this.articulos.forEach(articulo => {
-       if(articulo.nombre === nombreArticulo){
-         if(articulo.cantidad > 0){
-            articulo.cantidad--;
-            articulo.stock++;
-         }
-       }
-     });
+
+
+
+  botonDisabled: boolean = true;
+
+  comprarMas(articulo: StoreArticle) {
+    if (articulo.stock > 0) {
+      articulo.cantidad++;
+      articulo.stock--;
+    }
   }
 
-  //Sin usar
-  cambiaInput(evento: Event){
-    const target = evento.target as HTMLInputElement
-    console.log('cambiaInput',target.value);
-}
-  cambiaLista(evento: Event){
-    const target = evento.target as HTMLSelectElement
-    console.log('cambia lista',target.value);
-  
-}
+  comprarMenos(articulo: StoreArticle) {
+    if (articulo.cantidad > 0) {
+      articulo.cantidad--;
+      articulo.stock++;
+    }
+  }
+
+  miClick1: EventEmitter<String> = new EventEmitter<String>();
+
+  @Output()
+  miClick2: EventEmitter<String> = new EventEmitter<String>();
+
+  emiteClick1() {
+    this.miClick1.emit('Emitiendo click desde el botón 1.');
+  }
+
+  emiteClick2() {
+    this.miClick2.emit('Emitiendo click desde el botón 2.');
+  }
+
+
+
+
+
+
+
 }

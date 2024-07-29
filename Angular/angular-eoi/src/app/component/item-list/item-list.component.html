@@ -1,13 +1,23 @@
+
+<hr>
+<eoi-shopping-cart [articulos]="articulos">
+     </eoi-shopping-cart>
+<hr>
+
 <input type="button" [disabled]="botonDisabled" value="Ver lista articulos">
-@for (articulo of articulos; track articulo.nombre) {
+
+@for (articulo of articulosObservable | async; track articulo.nombre) {
 <br>
 <section class="articulo">
     <h2>{{articulo.nombre | uppercase}}</h2>
     <h3>Precio: {{articulo.precio}}€</h3>
     <p>Cantidad a comprar: {{articulo.cantidad}}</p>
-    <button (click)="comprarMas(articulo.nombre.toString())">+1</button>
-    <button (click)="comprarMenos(articulo.nombre.toString())">-1</button>
+    <button (click)="comprarMenos(articulo)">-1</button>
+    <button (click)="comprarMas(articulo)">+1</button>
     <h3 [class.sin-stock]="articulo.stock==0">Stock: {{articulo.stock | stock:"No disponible"}}</h3>
     <p><img width="120" height="100" [src]="articulo.imagen" alt=""></p>
 </section>
 }
+
+<button (click)="emiteClick1()">Emite click 1</button>
+<button (click)="emiteClick2()">Emite click 2</button>

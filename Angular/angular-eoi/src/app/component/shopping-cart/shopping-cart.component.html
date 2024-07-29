@@ -1,0 +1,16 @@
+
+<h1>
+    Shopping Cart
+</h1>
+
+@for (articulo of articulos;track articulo.id){
+    @if(articulo.cantidad > 0){
+        <section>
+            <h2>{{articulo.nombre}} x {{articulo.cantidad}}</h2>
+        </section> 
+    }
+}
+
+
+
+
