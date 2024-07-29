@@ -1,0 +1,19 @@
+{
+  "articulos": [
+    {
+      "id": 1,
+      "nombre": "Artículo 1",
+      "descripcion": "Descripción del Artículo 1"
+    },
+    {
+      "id": 2,
+      "nombre": "Artículo 2",
+      "descripcion": "Descripción del Artículo 2"
+    },
+    {
+      "id": 3,
+      "nombre": "Artículo 3",
+      "descripcion": "Descripción del Artículo 3"
+    }
+  ]
+}

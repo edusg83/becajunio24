@@ -1,0 +1,28 @@
+@url= http://192.168.1.33:3000/articulos
+
+GET {{url}}
+Content-Type: application/json
+
+###
+
+POST {{url}}
+Content-Type: application/json
+
+{
+    "id": "4",
+    "nombre":"Artículo 4",
+    "descripcion": "Descripcion"
+}
+
+###
+PUT {{url}}
+Content-Type: application/json
+
+{
+    "id": "3",
+    "descripcion":"juguete"
+}
+
+###
+DELETE {{url}}/4
+Content-Type: application/json

@@ -15,13 +15,11 @@ import { OnInit } from '@angular/core';
 export class StoreDashboardComponent implements OnInit {
   ngOnInit(): void {
     this.usuario = `Usted ha iniciado sesion como ${this.usuario}` 
-    
   }
 
   esUsuarioAdmin: boolean = false; 
   usuario: string="Usuario 1";
   
-
   recogeClick1(evento:String){
     console.log(`Recogiendo click del botón 1`, evento);
   }
